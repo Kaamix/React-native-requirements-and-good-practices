@@ -1,4 +1,4 @@
-# React Native Project Requirements & Good practices
+# React Native Project Requirements & Good Practices
 
 ## Setup
 
