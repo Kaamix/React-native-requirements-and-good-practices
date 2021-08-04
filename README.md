@@ -2,13 +2,15 @@
 
 ## Setup
 
-### Android
+### **Android**
 
 1. Download the [JDK](https://www.oracle.com/fr/java/technologies/javase-downloads.html)
 
 2. Download the [Android Debug Bridge](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) to allow developing on your phone.
 Then verify the environment variable is correctly setup. (C:\Users\USERNAME\AppData\Local\Android\Sdk\platform-tools\adb)
 3. Download [Gradle](https://gradle.org/releases/)
+
+4. Download [Android Studio](https://developer.android.com/studio?hl=fr&gclid=CjwKCAjw9aiIBhA1EiwAJ_GTSlx0znxjnVhBg2qjBCHcuzSeoKOXdCsz8vXwSmtzicmAL3DHy3HNWxoC3WYQAvD_BwE&gclsrc=aw.ds)
 
 In android folder :
 > Add local.properties defining SDK dir like below : 
@@ -22,6 +24,16 @@ In android folder :
 
 *Linux*
 - `sdk.dir = /home/USERNAME/Android/Sdk`
+
+### **iOS**
+
+> From the App Store download **XCode**
+
+> Install **Cocoapods** as iOS packages are *Pods*
+
+```bash
+sudo gem install cocoapods
+```
 
 ## Structure
 
@@ -65,11 +77,17 @@ Just a structure example
 
 For the in-app assets, best are Svg's
 
-**[Link](https://easyappicon.com/)** to generate icons
+**[Link](https://easyappicon.com/)** to generate app icons
+
+## Animations
+
+Best library to my view is **reanimated 2**, animations are rendered on the *UI thread* unlike the animated API offered by react native that are rendered on the *JS thread*.
+
+Check this [doc](https://docs.swmansion.com/react-native-reanimated/docs/installation) for the installation guide.
 
 ## Deployment
 
-## Android
+### **Android**
 
 Change the number version in *android/app/build.gradle > android > defaultConfig*
 
@@ -99,7 +117,7 @@ gradlew bundleRelease
 ```
 
 You can find the generated package here : `android/app/build/outputs/bundle`
-## iOS
+### **iOS**
 On XCode
 
 Change the **version** and the **build number** in *Targets > General* 
