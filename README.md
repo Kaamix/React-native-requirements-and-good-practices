@@ -29,7 +29,7 @@ In android folder :
 
 > From the App Store download **XCode**
 
-> Install **Cocoapods** as iOS packages are *Pods*
+> Install **Cocoapods** because iOS packages are *Pods*
 
 ```bash
 sudo gem install cocoapods
