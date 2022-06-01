@@ -18,7 +18,6 @@ In android folder :
 *Windows*
 - `sdk.dir = C:\\Users\\USERNAME\\AppData\\Local\\Android\\sdk`
 
-
 *Mac*
 - `sdk.dir = /Users/USERNAME/Library/Android/sdk`
 
@@ -69,7 +68,7 @@ Just a structure example
 
 > **Use hooks.**
 
-> A good component *should'nt exceed* **100 lines**.
+> A good component *shouldn't exceed* **100 lines**.
 
 > Avoid to the max using stores like redux, always search to use **parent/child props** and **local state**
 
