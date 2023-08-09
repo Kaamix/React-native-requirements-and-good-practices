@@ -45,7 +45,10 @@ Just a structure example
     /components
         /ComponentFolder
             +index.js
-            +partOfComponent.js
+    /pages
+        +index.js
+        /components
+            +component.js
     /helpers
         +helperFunction.js
     /api
@@ -57,6 +60,8 @@ Just a structure example
         /fonts
             +index.js
         /colors
+            +index.js
+        /styles
             +index.js
     /redux
         reducers/
